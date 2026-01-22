@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic tag</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav a:hover {
+            color: rgb(75, 61, 61);
+        }
+
+        .nav-opt {
+            display: flex;
+            gap: 20px;
+            padding-right: 30px;
+        }
+
+        nav {
+            background-color: gray;
+            padding: 2px;
+            border-radius: 10px 10px 10px 0;
+            position: sticky;
+            top: 0;
+        }
+
+        aside {
+            background-color: gray;
+            border-radius: 0 0 10px 10px;
+            color: white;
+            padding: 10px;
+            width: 15%;
+            height: 100vh;
+            position: fixed;
+        }
+
+        aside a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container {
+            margin-left: 15%;
+            padding-left: 30px;
+        }
+
+        ul {
+            align-items: center;
+        }
+
+        #mobNav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        
+        @media screen and (max-width: 400px) {
+            #fullNav{
+                display: none;
+            }
+            aside {
+                display: none;
+            }
+            .container {
+                margin: 0;
+                padding: 0;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+
+        @media screen and (min-width: 401px) {
+            #mobNav{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <details>
+        <summary title="Click here to open menu">Menu</summary>
+        <ul type="none">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </details> -->
+    <nav id="mobNav">
+            <div>
+                <a href="#home"><img src="./miraclelogo.svg" alt="Miracle Logo" title="Miracle" height="40px"
+                            width="100px"></a>
+            </div>
+            <div style="padding-right: 15px;">
+                <details>
+                    <summary title="Click here to open menu">Menu</summary>
+                    <ul type="none">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </details>
+            </div>
+    </nav>
+    <nav id="fullNav">
+        <ul type="none" style="display: flex; justify-content: space-between;">
+            <div>
+                <li><a href="#home"><img src="./miraclelogo.svg" alt="Miracle Logo" title="Miracle" height="40px"
+                            width="100px"></a></li>
+            </div>
+            <div class="nav-opt">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </div>
+        </ul>
+    </nav>
+    <aside>
+        <h3>Recent Posts</h3>
+        <ul type="none">
+            <li><a href="#post1">Post 1</a></li>
+            <li><a href="#post2">Post 2</a></li>
+            <li><a href="#post3">Post 3</a></li>
+        </ul>
+    </aside>
+    <div class="container">
+        <header>
+            <center>
+                <h1>Semantics Demo</h1>
+            </center>
+            <hr>
+        </header>
+        <section id="home">
+            <header>
+                <h2>This is home page</h2>
+            </header>
+            <article>
+                <h3>This is my blog post</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ullam dignissimos earum eaque
+                    quibusdam illum corporis reiciendis, nesciunt nisi deleniti facilis voluptatum porro, omnis totam,
+                    blanditiis quisquam quod repellendus aspernatur?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ullam dignissimos earum eaque
+                    quibusdam illum corporis reiciendis, nesciunt nisi deleniti facilis voluptatum porro, omnis totam,
+                    blanditiis quisquam quod repellendus aspernatur?</p>
+            </article>
+        </section>
+        <hr width="60%">
+        <section id="about">
+            <header>
+                <h2>This is About page</h2>
+            </header>
+            <main>
+                <div>
+                    <h3>About company</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum ea dicta est veritatis nesciunt,
+                        odio ab adipisci accusantium unde. Ad repudiandae ipsum labore? Blanditiis temporibus ullam
+                        natus aperiam repellat eaque similique est! Dolore repellat dolorum quisquam accusamus est
+                        deleniti officia fuga vel labore aliquam.
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ullam dignissimos earum eaque
+                        quibusdam illum corporis reiciendis, nesciunt nisi deleniti facilis voluptatum porro, omnis
+                        totam, blanditiis quisquam quod repellendus aspernatur?</p>
+                    </p>
+                </div>
+                <div>
+                    <h3>About Myself</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda perspiciatis quibusdam
+                        harum ipsum, architecto laborum animi repellendus voluptatum tempora, odio accusantium? Iusto
+                        modi cupiditate consequuntur exercitationem aliquam a enim dignissimos alias sint.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ullam dignissimos earum eaque
+                        quibusdam illum corporis reiciendis, nesciunt nisi deleniti facilis voluptatum porro, omnis
+                        totam, blanditiis quisquam quod repellendus aspernatur?</p>
+                </div>
+            </main>
+        </section>
+        <hr>
+        <section id="contact">
+            <header>
+                <h2>This is the contact page</h2>
+            </header>
+            <div>
+                <h3><a href="mailto:pranjal.p@rkitsoftware.com">Mail Me</a></h3>
+                <h3><a href="tel:+919106533108">Call Me</a></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ullam dignissimos earum eaque
+                    quibusdam illum corporis reiciendis, nesciunt nisi deleniti facilis voluptatum porro, omnis totam,
+                    blanditiis quisquam quod repellendus aspernatur?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio numquam est inventore sint
+                    accusamus ullam voluptate odit eaque, doloremque vel alias magnam consectetur corrupti laudantium
+                    facere repellat quam harum. Ipsam!</p>
+            </div>
+        </section>
+        <hr>
+        <section id="post1">
+            <header>
+                <h2>This is the post 1</h2>
+            </header>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ullam dignissimos earum eaque
+                    quibusdam illum corporis reiciendis, nesciunt nisi deleniti facilis voluptatum porro, omnis totam,
+                    blanditiis quisquam quod repellendus aspernatur?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio numquam est inventore sint
+                    accusamus ullam voluptate odit eaque, doloremque vel alias magnam consectetur corrupti laudantium
+                    facere repellat quam harum. Ipsam!</p>
+            </div>
+        </section>
+        <hr>
+        <section id="post2">
+            <header>
+                <h2>This is the post 2</h2>
+            </header>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ullam dignissimos earum eaque
+                    quibusdam illum corporis reiciendis, nesciunt nisi deleniti facilis voluptatum porro, omnis totam,
+                    blanditiis quisquam quod repellendus aspernatur?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio numquam est inventore sint
+                    accusamus ullam voluptate odit eaque, doloremque vel alias magnam consectetur corrupti laudantium
+                    facere repellat quam harum. Ipsam!</p>
+            </div>
+        </section>
+        <hr>
+        <section id="post3">
+            <header>
+                <h2>This is the post 3</h2>
+            </header>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ullam dignissimos earum eaque
+                    quibusdam illum corporis reiciendis, nesciunt nisi deleniti facilis voluptatum porro, omnis totam,
+                    blanditiis quisquam quod repellendus aspernatur?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio numquam est inventore sint
+                    accusamus ullam voluptate odit eaque, doloremque vel alias magnam consectetur corrupti laudantium
+                    facere repellat quam harum. Ipsam!</p>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

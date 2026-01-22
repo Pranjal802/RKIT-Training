@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image tag</title>
+</head>
+<body>
+    <center><h1>Image tag</h1></center>
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>Image Tag Demo</title>
+    <style>
+        body {
+            background-image: url("picture.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Image Tag Demo</h1>
+
+    <ol type="A">
+        <!-- <li>
+            <input type="text" name="txt1" id="txt1"><br>
+            <input type="text" name="txt2" id="txt2"><br>
+            <button onclick="add()">ADD</button>
+        </li> -->
+        <li>
+            <h2>Simple image</h2>
+            <img src="large.jpg" srcset="" sizes="(max-width: 400px) 300px, (max-width: 800px) 600px, 900px"
+                alt="Large img" loading="eager" decoding="sync" draggable="false"><br>
+        </li>
+        <li>
+            <h2>Using &lt;picture&gt; tag</h2>
+            <picture>
+                <source srcset="./small.jpg 300w" media="(max-width: 400px)">
+                <source srcset="./medium.jpg 600w" media="(max-width: 800px)">
+                <img srcset="./large.jpg 900w">
+            </picture>
+        </li>
+
+        <li>
+            <h2>Simple image from external source</h2>
+            <img src="demo.pdf" draggable="true" alt="Large img" loading="eager" decoding="sync"
+                referrerpolicy="no-referrer" height="200px" width="300px"> <br>
+        </li>
+        <li>
+            <h2>clickable image</h2>
+            <a href="https://images.unsplash.com/photo-1506905925346-21bda4d32df4" target="_blank]"> <img
+                    src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4" alt="Large img" loading="eager"
+                    decoding="sync" referrerpolicy="no-referrer" height="200px" width="300px"
+                    title="Click to open image in its own website"></a>
+        </li>
+
+    </ol>
+
+</body>
+
+</html>
