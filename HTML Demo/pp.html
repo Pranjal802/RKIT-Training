@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas Basic Example</title>
+    <style>
+        canvas {
+            border: 2px solid #333;
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Basic canvas element -->
+    <canvas id="myCanvas" width="800" height="600">
+        Your browser does not support the canvas element.
+    </canvas>
+    
+    <script>
+        // Get canvas context
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Drawing examples
+        ctx.fillStyle = 'red';
+        ctx.fillRect(50, 50, 100, 100); // Draw a rectangle
+        
+        ctx.fillStyle = 'blue';
+        ctx.beginPath();
+        ctx.arc(200, 200, 50, 0, Math.PI * 2); // Draw a circle
+        ctx.fill();
+    </script>
+</body>
+</html>

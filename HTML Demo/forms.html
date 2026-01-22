@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        body {
+            font-family: Nunito;
+        }
+
+        optgroup {
+            color: red
+        }
+
+        option {
+            color: black;
+        }
+
+        /* option{
+            all: initial;
+        } */
+    </style>
+</head>
+
+<body>
+    <h2> <mark>HTML Forms</mark> </h2>
+    <fieldset>
+        <p>HELLO WORLD</p>
+        <legend>Your data</legend>
+        <!-- Personal Details Section -->
+        <fieldset>
+            <legend>Personal Detail</legend>
+            <form action="#" method="get" name="personal_detail" autocomplete="on" novalidate>
+                <label for="firstname">First name:</label>
+                <input id="firstname" name="firstname" type="text" autocapitalize="on"><br>
+                <label for="dob">DOB</label>
+                <input type="date" name="birthdate" id="dob"><br>
+
+                <label for="hobbies">Hobbies</label>
+                <input id="hobbies" type="checkbox" name="hobby1">
+                <label for="hobbies">Coding</label>
+                <input id="hobbies" type="checkbox" name="hobby2">
+                <label for="hobby2">Music</label><br>
+
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label><br>
+
+                <label for="resume">Upload your resume </label>
+                <input type="file" name="resume" id="resume" accept=".pdf"><br>
+                <label for="age">Age</label>
+                <input type="range" min="18" max="32" value="21"> <br>
+
+                <label for="joindate">Joining Date</label>
+                <input id="joindate" type="date" min="2004-07-13T22:10" max="2010-02-27T11:11" step="1"><br>
+
+                <label for="browserselect"> Select browser</label>
+                <input list="browsers" name="browser" id="browserselect"> list and id must be same to connect
+                <datalist id="browsers">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                </datalist><br>
+
+                <label for="car">Select the car(Please select BMW)</label>
+                <select name="cars" id="car">
+                    <option value="porsche">Porsche</option>
+                    <optgroup style="color: red;" label="BMW ">
+                        <option value="m4">M4</option>
+                        <option value="m8" selected>M8</option>
+                    </optgroup>
+                </select><br>
+
+                <!-- Progress bar -->
+                <label for="yourprogress">Progress of learnings</label>
+                <progress value="70" max="100">80%</progress>
+                <br>
+                <!-- Meter -->
+                <label for="stresslevel">Your stress level</label>
+                <meter value="0.6" min="0" max="1">100%</meter>
+                <input type="submit" value="SUBMIT">
+                <!-- </form> -->
+        </fieldset>
+
+        <!-- Contact Details Section -->
+        <fieldset>
+            <legend>Contact Details</legend>
+            <!-- <form id="contactForm" name="contactForm" action="/api/contact" method="POST"
+                enctype="application/x-www-form-urlencoded" autocomplete="on" novalidate data-form-type="contact"> -->
+            <label for="mo.no.">Mobile Number </label>
+            <input id="mo.no." type="number" name="mobile" placeholder="mobile number" required autofocus><br>
+            <label for="email">Email </label>
+            <input id="email" type="email" name="email" placeholder="Email"
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required><br>
+            <div style="display: flex; align-items: center;">
+                <label for="msg">Message </label>
+                <textarea name="message" placeholder="Message" rows="5" required></textarea>
+            </div>
+
+            <div align="center">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+
+            </form>
+            </fielset>
+        </fieldset>
+    </fieldset>
+</body>
+
+</html>

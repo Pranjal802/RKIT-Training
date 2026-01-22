@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All HTML Input Types</title>
+</head>
+<body>
+    <h1>All HTML Input Types</h1>
+    
+    <!-- Basic Text Inputs -->
+    <h2>Basic Input Types</h2>
+    
+    <h3>1. Text Input (type="text")</h3>
+    <input type="text" name="username" placeholder="Enter username">
+    <br><br>
+    
+    <h3>2. Password Input (type="password")</h3>
+    <input type="password" name="password" placeholder="Enter password">
+    <br><br>
+    
+    <h3>3. Email Input (type="email")</h3>
+    <input type="email" name="email" placeholder="Enter email">
+    <br><br>
+    
+    <h3>4. Number Input (type="number")</h3>
+    <input type="number" name="age" min="0" max="120" step="1" value="25">
+    <br><br>
+    
+    <h3>5. Telephone Input (type="tel")</h3>
+    <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+    <br><br>
+    
+    <h3>6. URL Input (type="url")</h3>
+    <input type="url" name="website" placeholder="https://example.com">
+    <br><br>
+    
+    <h3>7. Search Input (type="search")</h3>
+    <input type="search" name="search" placeholder="Search...">
+    <br><br>
+    
+    <!-- Date & Time Inputs -->
+    <h2>Date & Time Inputs</h2>
+    
+    <h3>8. Date Input (type="date")</h3>
+    <input type="date" name="birthdate">
+    <br><br>
+    
+    <h3>9. Time Input (type="time")</h3>
+    <input type="time" name="time">
+    <br><br>
+    
+    <h3>10. DateTime-Local Input (type="datetime-local")</h3>
+    <input type="datetime-local" name="datetime">
+    <br><br>
+    
+    <h3>11. Month Input (type="month")</h3>
+    <input type="month" name="month">
+    <br><br>
+    
+    <h3>12. Week Input (type="week")</h3>
+    <input type="week" name="week">
+    <br><br>
+    
+    <!-- Selection Inputs -->
+    <h2>Selection Inputs</h2>
+    
+    <h3>13. Checkbox Input (type="checkbox")</h3>
+    <input type="checkbox" name="subscribe" id="subscribe" checked>
+    <label for="subscribe">Subscribe to newsletter</label>
+    <br>
+    <input type="checkbox" name="terms" id="terms">
+    <label for="terms">Agree to terms</label>
+    <br><br>
+    
+    <h3>14. Radio Button Input (type="radio")</h3>
+    <input type="radio" name="gender" id="male" value="male" checked>
+    <label for="male">Male</label>
+    <br>
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="female">Female</label>
+    <br>
+    <input type="radio" name="gender" id="other" value="other">
+    <label for="other">Other</label>
+    <br><br>
+    
+    <h3>15. Range Input (type="range")</h3>
+    <input type="range" name="volume" min="0" max="100" value="50">
+    <br><br>
+    
+    <h3>16. Color Input (type="color")</h3>
+    <input type="color" name="favcolor" value="#ff0000">
+    <br><br>
+    
+    <!-- File Inputs -->
+    <h2>File Inputs</h2>
+    
+    <h3>17. File Input (type="file")</h3>
+    <input type="file" name="myfile">
+    <br><br>
+    
+    <h3>18. Multiple File Input (type="file" multiple)</h3>
+    <input type="file" name="files" multiple>
+    <br><br>
+    
+    <!-- Button Inputs -->
+    <h2>Button Inputs</h2>
+    
+    <h3>19. Submit Button (type="submit")</h3>
+    <input type="submit" value="Submit Form">
+    <br><br>
+    
+    <h3>20. Reset Button (type="reset")</h3>
+    <input type="reset" value="Reset Form">
+    <br><br>
+    
+    <h3>21. Button Input (type="button")</h3>
+    <input type="button" value="Click Me" onclick="alert('Button clicked!')">
+    <br><br>
+    
+    <h3>22. Image Button (type="image")</h3>
+    <input type="image" src="https://via.placeholder.com/100x30" alt="Submit" width="100" height="30">
+    <br><br>
+    
+    <h2>Special Inputs</h2>
+    
+    <h3>23. Hidden Input (type="hidden")</h3>
+    <input type="hidden" name="userid" value="12345">
+    <span>(Invisible input - used for passing data)</span>
+    <br><br>
+    
+    <h2>Textarea</h2>
+    <h3>24. Textarea</h3>
+    <textarea name="message" rows="4" cols="50" placeholder="Enter your message here..."></textarea>
+    <br><br>
+    
+    <h2>Select Dropdown</h2>
+    <h3>25. Select Dropdown</h3>
+    <select name="country">
+        <option value="">Select a country</option>
+        <option value="us">United States</option>
+        <option value="uk">United Kingdom</option>
+        <option value="ca">Canada</option>
+        <option value="au">Australia</option>
+    </select>
+    <br><br>
+    
+    <h3>26. Multiple Select</h3>
+    <select name="skills" multiple size="4">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+        <option value="php">PHP</option>
+        <option value="python">Python</option>
+    </select>
+    <br><br>
+    
+    <h2>Datalist</h2>
+    <h3>27. Datalist with Text Input</h3>
+    <input list="browsers" name="browser" placeholder="Choose or type">
+    <datalist id="browsers">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Safari">
+        <option value="Edge">
+        <option value="Opera">
+    </datalist>
+    <br><br>
+    
+    <h2>Other Form Elements</h2>
+    
+    <h3>28. Fieldset and Legend</h3>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label>Name: <input type="text" name="name"></label><br>
+        <label>Email: <input type="email" name="email"></label>
+    </fieldset>
+    <br>
+    
+    <h3>29. Output Element</h3>
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" value="50"> +
+        <input type="number" id="b" value="25"> =
+        <output name="result" for="a b">75</output>
+    </form>
+    <br>
+    
+    <h3>30. Meter Element</h3>
+    <label>Disk usage: <meter value="0.6" min="0" max="1">60%</meter></label>
+    <br><br>
+    
+    <h3>31. Progress Bar</h3>
+    <label>Loading: <progress value="70" max="100">70%</progress></label>
+    <br><br>
+    
+    <h2>Button Element</h2>
+    <h3>32. Button Element</h3>
+    <button type="button" onclick="alert('Button clicked!')">Click Me</button>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    <br>
+    
+</body>
+</html>
