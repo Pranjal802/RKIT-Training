@@ -20,16 +20,23 @@
         <h1>IFRAME Demonstration</h1>
         <fieldset>
             <legend>Iframe Examples</legend>
-            <iframe src="pp.html" width="100%" height="300"></iframe>
-            <iframe src="https://en.wikipedia.org" width="100%" height="300"></iframe>
+            <!-- <iframe src="pp.html" width="100%" height="300"></iframe> -->
+            <iframe src="image_tag.html" width="100%" height="300"></iframe>
+
+            <dialog open>
+                <p>Click the link in ifame to see demo of "_parent" target.</p>
+                <form method="dialog">
+                    <button accesskey="o" autofocus><b><u>O</u></b>k</button>
+                </form>
+            </dialog>
         </fieldset>
     </section>
 
     <section>
         <h1>Image Map Demonstration</h1>
-        <fieldset>
+        <fieldset if="map_area_tag">
             <legend>Map and Area Example</legend>
-            <img src="medium.jpg" usemap="#image-map" width="400" height="200">
+            <img src="./img_media/medium.jpg" usemap="#image-map" width="400" height="200">
             <map name="image-map">
                 <area target="_blank" alt="Deepseek" title="Deepseek" href="https://chat.deepseek.com" coords="25,54,200,150">
                 <area target="_blank" alt="Notion" title="Notion" href="https://www.notion.so" coords="300,54,500,150">

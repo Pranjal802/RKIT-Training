@@ -39,7 +39,7 @@
             <legend>Personal Detail</legend>
             <form action="#" method="get" name="personal_detail" autocomplete="on" novalidate>
                 <label for="firstname">First name:</label>
-                <input id="firstname" name="firstname" type="text" autocapitalize="on"><br>
+                <input id="firstname" name="firstname" type="text" spellcheck="true"><br>
                 <label for="dob">DOB</label>
                 <input type="date" name="birthdate" id="dob"><br>
 
@@ -81,11 +81,11 @@
 
                 <!-- Progress bar -->
                 <label for="yourprogress">Progress of learnings</label>
-                <progress value="70" max="100">80%</progress>
+                <progress id="progress_tag" value="70" max="100">80%</progress>
                 <br>
                 <!-- Meter -->
                 <label for="stresslevel">Your stress level</label>
-                <meter value="0.6" min="0" max="1">100%</meter>
+                <meter id="meter_tag" value="0.6" min="0" max="1">100%</meter>
                 <input type="submit" value="SUBMIT">
                 <!-- </form> -->
         </fieldset>
@@ -100,9 +100,9 @@
             <label for="email">Email </label>
             <input id="email" type="email" name="email" placeholder="Email"
                 pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required><br>
-            <div style="display: flex; align-items: center;">
+            <div id="textarea_tag" style="display: flex; align-items: center;">
                 <label for="msg">Message </label>
-                <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                <textarea name="message" placeholder="Message" rows="5" spellcheck="true" required></textarea>
             </div>
 
             <div align="center">
@@ -112,6 +112,20 @@
 
             </form>
             </fielset>
+        </fieldset>
+    </fieldset>
+
+    <fieldset>
+
+        <!-- Form with ID -->
+        <form id="myForm">
+            <input type="text" name="username">
+        </form>
+        
+        <!-- Fieldset OUTSIDE the form but connected via form attribute -->
+        <fieldset form="myForm">
+            <legend>Additional Info</legend>
+            <input type="email" name="email">
         </fieldset>
     </fieldset>
 </body>

@@ -2,9 +2,7 @@
 <html lang="gu">
 
 <head>
-
     <meta charset="UTF-16">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Pranjal">
     <meta name="keywords" content="html,html tags, html elements, img tag, div, css, web development">
@@ -19,66 +17,1383 @@
         body {
             font-family: Nunito;
         }
+        html{
+            scroll-behavior: smooth;
+        }
     </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <center>
-        <h1>HTML Intro & Basics</h1>
+        <h1>HTML</h1>
     </center>
+    <br>
+    <a href="#top">
+        <div style="height: 50px; width: 50px; border-radius: 50%; background: red; display: flex; align-items: center;justify-content: center; font-size: larger; font-weight: 900; color: white; position: fixed; bottom: 50px; right: 50px; padding: 10px;">
+            Top &#8593;
+        </div>
+    </a>
+    
+    <center>
+    <table>
+        <caption style="font-size: larger;" id="top">HTML Tags & Attributes</caption>
+        <colgroup>
+            <col span="1" class="first_col">
+            <col span="1" class="second_col">
+            <col span="1" class="third_col">
+            <col span="1" class="forth_col">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Sr. no.</th>
+                <th>Tags</th>
+                <th>Attributes</th>
+                <th>Detail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="6">1</td>
+                <th rowspan="6">&lt;a&gt;</th>
+            </tr>
+            <tr>
+                <td>download="file_name" OR download</td>
+                <td>When we click link, it downloads the given file. If filename is given than it will download as
+                    named.</td>
+            </tr>
+            <tr>
+                <td>href=""</td>
+                <td>href contains the url or internal html file to redirect when user clicks.</td>
+            </tr>
+            <tr>
+                <td>ping=""</td>
+                <td>ping sends the post request to the given path when link is clicked. Helps to check which links are
+                    clicked.</td>
+            </tr>
+            <tr>
+                <td>referrerpolicy=""</td>
+                <td>
+                    <ul>
+                        <li>no-referrer : It disabled the transfer of the confidential data when you clicked any
+                            external link in web page.</li>
+                        <li>no-referrer-when-downgrade : It allows required data if and only if when the external link
+                            is secured(https) and it will not allow in non secured urls(http).</li>
+                        <li>origin : It allows only origin to send to the external url.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>target=""</td>
+                <td>
+                    <ul>
+                        <li><a href="image_tag.html"  title="Click to see demo" target="_blank">_blank </a>
+                            : It opens the url in new tab.</li>
+                        <li><a href="image_tag.html" target="_self" title="Click to see demo">_self</a>
+                            : Opens url in same tab.</li>
+                        <li><a href="others.html" target="_parent" title="Click to see demo"> _parent</a>
+                            : If we are using iframe and the external link is given in iframe, when user clicks url will
+                            open in that parent tab and iframe will be disappeared. If no parent it will work like
+                            _self.</li>
+                        <li>
+                            <a href="others.html" target="_top">_top</a> : if there are nested iframes than it will open
+                            in top parent tab and all iframes will be disappeared.
+                        </li>
+                    </ul>
+                </td>
+            </tr>
 
-    <ul type="none">
+            <tr>
+                <td>2</td>
+                <th scope="row">&lt;abbr&gt; <br>
+                    Abbreviation element
+                </th>
+                <td>global attributes</td>
+                <td>Is used when we want write any short forms. shown underlined by default. <abbr
+                        title="Hypertext Markup Language">HTML</abbr></td>
+            </tr>
+            <tr>
+                <td>3</td>
+
+                <th scope="row">
+                    <a href="#address_tag" title="Click to see demo">&lt;address&gt;</a>
+                </th>
+                <td>global attributes</td>
+                <td>Used to wrap contact inforamation.</td>
+            </tr>
+            <tr>
+                <td rowspan="3">4</td>
+
+                <th rowspan="3" scope="row">
+                    <a href="others.html#map_area_tag" title="Click to see demo" >&lt;map&gt; &
+                        &lt;area&gt;</a>
+                </th>
+                <td></td>
+                <td>Used to link urls on image with coordinates.</td>
+            </tr>
+            <tr>
+                <td>alt</td>
+                <td>Alternative text if image will no be loaded.</td>
+            </tr>
+            <tr>
+                <td>coords</td>
+                <td>Define coordinations of image.</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+
+                <th scope="row">
+                    <a>&lt;article&gt;</a>
+                </th>
+                <td></td>
+                <td>Semantic meaning. Used to display articles, blogs etc.</td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+
+                <th scope="row">
+                    &lt;aside&gt;
+                </th>
+                <td></td>
+                <td>Semantic meaning. Used to display content aside.</td>
+            </tr>
+
+            <tr>
+                <td rowspan="6">7</td>
+
+                <th rowspan="6" scope="row">
+                    <a href="media.html#audio_tag" >&lt;audio&gt;</a>
+                </th>
+                <td></td>
+                <td>Used to display the audio on the page.</td>
+            </tr>
+
+            <tr>
+                <td>autoplay</td>
+                <td>It will start the audio after loading automatacally.</td>
+            </tr>
+            <tr>
+                <td>controls</td>
+                <td>It gives the controls like play, pause etc.</td>
+            </tr>
+            <tr>
+                <td>loop</td>
+                <td>It plays the audio on loop after finishing.</td>
+            </tr>
+            <tr>
+                <td>muted</td>
+                <td>Audio will be mutes when plays.</td>
+            </tr>
+            <tr>
+                <td>src</td>
+                <td>Source of the audio.</td>
+            </tr>
+
+            <tr>
+                <td>8</td>
+
+                <th scope="row">
+                    &lt;b&gt; <br> Bring Attention To element
+                </th>
+                <td></td>
+                <td>Used to display <b>BOLD</b> text.</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <!-- <base href="media.html"> -->
+                <th scope="row">
+                    <a href="#base_tag" title="Click to see demo (uncomment the base tag in code)"
+                        >&lt;base&gt;</a> <br> Base Url Element
+                </th>
+                <td></td>
+                <td>It helps to navigate to other page's perticular section using id.</td>
+            </tr>
+
+            <tr>
+                <td>10</td>
+                <th scope="row">
+                    <a href="extra_tags_1.html#bdi_tag" title="Click to see the demo" >&lt;bdi&gt;</a>
+                    <br> Bidirectional Isolate element
+                </th>
+                <td></td>
+                <td>It used when the direction of the inserted text is unknown.</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <th scope="row">
+                    <a href="extra_tags_1.html#bdo_tag" title="Click to see the demo" >&lt;bdo&gt;</a>
+                    <br> Bidirectional Text Override element
+                </th>
+                <td></td>
+                <td>It used to override the currect directionality.</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <th scope="row">
+                    <a href="extra_tags_1.html#bdo_tag" title="Click to see the demo" >&lt;big&gt;</a>
+                </th>
+                <td></td>
+                <td>It used to write big text. <BIG>(DEPRECATED)</BIG></td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <th scope="row">
+                    &lt;blockquote&gt;
+                <td></td>
+                <td>Used to write long text in quotation. Rendered visually by indentation. <blockquote>Hello Devs, I am
+                        <cite>Pranjal Patel</cite> (Example of blockquote ans cite tag.)
+                    </blockquote>
+                </td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <th scope="row">
+                    &lt;body&gt;
+                <td></td>
+                <td>Used to wrap the content of body of html page.</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <th scope="row">
+                    &lt;br&gt;
+                <td></td>
+                <td>Used for line break.</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <th scope="row">
+                    &lt;button&gt;
+                <td></td>
+                <td>Button for on click events. <button>Click Me</button></td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <th scope="row">
+                    <a href="canvas.html#mycanvas"  title="Click to see demo">&lt;canvas&gt;</a>
+                </th>
+                <td>global attributes</td>
+                <td>Used to draw elements but it requires JS.</td>
+            </tr>
+            <tr>
+                <td rowspan="2">18</td>
+                <th rowspan="2" scope="row">
+                    <a href="pj_tbl.html"  title="Click to see demo">&lt;caption&gt;</a>
+                </th>
+                <td></td>
+                <td>Used to give caption to the table.(By default centered)</td>
+            </tr>
+            <tr>
+                <td>align=""</td>
+                <td>align the caption(top, bottom, left. right). DEPRECATED</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <th scope="row">
+                    <a href="pj_tbl.html"  title="Click to see demo">&lt;center&gt;</a>
+                </th>
+                <td></td>
+                <td>
+                    <center>Used to center the elements(This is also centered using center tag) DEPRECATED)</center>
+                </td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <th scope="row">
+                    &lt;cite&gt;<br>
+                    Citation element
+                <td></td>
+                <td>Used for citaion (Italic by default)<br>
+                    <cite>-Pranjal</cite>
+                </td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <th scope="row">
+                    &lt;code&gt;
+                <td></td>
+                <td>Used to write code like content (Monospace font by default)<br>
+                    <code>console.log(a);</code>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="5">22</td>
+                <th rowspan="5" scope="row">
+                    &lt;col&gt;
+                <td></td>
+                <td>Used to define colimn only as a child of &lt;colgroup&gt;.</td>
+            </tr>
+            <tr>
+                <td>span=""</td>
+                <td>Specifies the number of consecutive columns.</td>
+            </tr>
+            <tr>
+                <td>align=""</td>
+                <td>align the caption(top, bottom, left. right).</td>
+            </tr>
+            <tr>
+                <td>bgcolor=""</td>
+                <td>Used to give background color to the column.</td>
+            </tr>
+            <tr>
+                <td>vlign=""</td>
+                <td>align the caption(top, bottom, baseline, middle).</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <th scope="row">
+                    &lt;colgroup&gt;
+                <td></td>
+                <td>Used to define group of columns.</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <th scope="row">
+                    <a href="extra_tags_1.html#data_tag"  title="Click to see demo">&lt;data&gt;</a>
+                </th>
+                <td></td>
+                <td>Used to link the content of the tag with value="" aattribute.</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <th scope="row">
+                    <a href="extra_tags_1.html#datalist_tag" 
+                        title="Click to see demo">&lt;datalist&gt;</a>
+                </th>
+                <td></td>
+                <td>It suggests the pre defined options and autocomple the input box when you8 click it.</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <th scope="row">
+                    <a href="lists.html#dl_dt_dd_tag"  title="Click to see demo">&lt;dl&gt;,
+
+                        &lt;dt&gt;,
+                        &lt;dd&gt;
+                    </a>
+                </th>
+                <td>global attributes</td>
+                <td>
+                    Indentation is set by default
+                    <br> Examle of &lt;dl&gt;
+                    <dl>
+                        <dt>&lt;dl&gt;</dt>
+                        <dd>Description list, parent element for dt & dd.</dd>
+                        <dt>&lt;dt&gt;</dt>
+                        <dd>Title of the description</dd>
+                        <dt>&lt;dd&gt;</dt>
+                        <dd>Descriptive data</dd>
+                    </dl>
+                </td>
+            </tr>
+
+            <tr>
+                <td>26</td>
+                <th scope="row">
+                    <a href="extra_tags_1.html#data_tag"  title="Click to see demo">&lt;del&gt; &
+                        &lt;ins&gt;</a>
+                </th>
+                <td></td>
+                <td>Used to add inserted and deleted data,(inserted <ins>content</ins>(by default underlined) delected
+                    <del>content</del>(by default strickthrough))
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="3">27</td>
+                <th rowspan="3" scope="row">
+                    <a href="basic_tags.html#dtl_summ_tag"""  title="Click to see demo">&lt;details&gt; &
+                        &lt;summery&gt;</a>
+                </th>
+                <td></td>
+                <td>It shows the summery and the down arrow, by clicking that arrow we can expand the details.</td>
+            </tr>
+            <tr>
+                <td>open</td>
+                <td>details will be opened on page load, we don't have to click the arrow.</td>
+            </tr>
+            <tr>
+                <td>name=""</td>
+                <td>If we name two or more details, ot will allow to open one detail at a time</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <th scope="row">
+                    <a href="basic_tags.html#dfn_tag"""  title="Click to see demo">&lt;dfn&gt;</a>
+                </th>
+                <td></td>
+                <td><dfn>&lt;dfn&gt;</dfn> Definition of anything (Italic by default)</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <th scope="row">
+                    <a href="basic_tags.html#dfn_tag"""  title="Click to see demo">&lt;dfn&gt;</a>
+                <td></td>
+                <td><dfn>&lt;dfn&gt;</dfn> Definition of anything (Italic by default)</td>
+            </tr>
+            <tr>
+                <td rowspan="2">30</td>
+                <th rowspan="2" scope="row">
+                    <a href="basic_tags.html#dfn_tag"""  title="Click to see demo">&lt;dialog&gt;</a>
+                </th>
+                <td></td>
+                <td>Shows the dialog on the page. Will be closed by any user interaction.</td>
+            </tr>
+            <tr>
+                <td>colsedby=""</td>
+                <td>It defines that how will be the dialog box will be closed
+                    <ul>
+                        <li>any : Can be closed by any interaction.</li>
+                        <li>closerequest : Can be closed by developer-specific or platform-specific interaction.</li>
+                        <li>none : Can be closed by developer-specific interaction only.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <th scope="row">
+                    &lt;em&gt;<br>
+                    Emphasis element
+                </th>
+                <td></td>
+                <td>visually <em>Italic</em> will help to screen readers.</td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <th scope="row">
+                    &lt;embed&gt;<br>
+                    Embed External Content element
+                </th>
+                <td>global attributes</td>
+                <td>Embed external content in the page.(Semantic meaning)</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <th scope="row">
+                    &lt;fencedframe&gt;<br>
+                    Embed External Content element
+                </th>
+                <td></td>
+                <td>Just like iframe but it restricts the external interactions.(DEPRECATED)</td>
+            </tr>
+            <tr>
+                <td rowspan="4">34</td>
+                <th rowspan="4" scope="row">
+                    <a href="simpleform_task.html" >&lt;fieldset&gt; & &lt;legend&gt;</a>
+                </th>
+                <td></td>
+                <td>It wraps the field and by using &lt;legend&gt; we can add title which will be written on the border
+                </td>
+            </tr>
+
+            <tr>
+                <td>disabled</td>
+                <td>It disabled the form fields wraped inside the fieldset element.</td>
+            </tr>
+            <tr>
+                <td><a href="forms.html#myForm" title="Click to see the demo">form</a></td>
+
+                <td>
+                    The form attribute lets you connect a &lt;fieldset&gt; to a form even if it's NOT physically inside
+                    the &lt;form&gt; tag.
+                </td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>Name associated by group.
+                </td>
+            </tr>
+
+            <tr>
+                <td>35</td>
+                <th scope="row">
+                    <a href="image_tag.html#fig_figcap" >&lt;figure&gt; & &lt;figcaption&gt;</a>
+                </th>
+                <td></td>
+                <td>&lt;figure&gt; will wrap the &lt;figcaption&gt; element and the image.</td>
+            </tr>
+            <tr>
+                <td rowspan="6">36</td>
+                <th rowspan="6" scope="row">
+                    <a href="forms.html" >&lt;form&gt;</a>
+                </th>
+                <td></td>
+                <td>It wraps the form elements like inputes for making form.</td>
+            </tr>
+            <tr>
+                <td>accept</td>
+                <td>Depricated in form element.</td>
+            </tr>
+            <tr>
+                <td>accept-charset=""</td>
+                <td>Like UTF-8, UTF-16 etc, But now a days browsers are using UTF-8 by default</td>
+            </tr>
+            <tr>
+                <td>anctype=""</td>
+                <td>In which form the data will be subbmited.
+                    <ul>
+                        <li>application/x-www-form-urlencoded : Default value</li>
+                        <li>multipart/form-data : If input field in that form contains file.</li>
+                        <li>text/plain : Sends plain text, useful for debugging.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>method=""</td>
+                <td>
+                    Which methos we want to use to send the data.
+                    <ul>
+                        <li>GET : Sends data via url.</li>
+                        <li>POST : Sends data in request or api calls.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>novalidate</td>
+                <td>It ignores the all validations.</td>
+            </tr>
+            <tr>
+                <td>37</td>
+                <th scope="row">
+                    &lt;h1&gt; to &lt;h6&gt;
+                </th>
+                <td>global attributes</td>
+                <td>Heading elements used to display text. Their sizes are fixed and they set sizes according to their
+                    parent.</td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <th scope="row">
+                    &lt;haed&gt;
+                </th>
+                <td>global attributes</td>
+                <td>Head er data of the web page like title, meta, link etc.</td>
+            </tr>
+            <tr>
+                <td>39</td>
+                <th scope="row">
+                    &lt;header&gt;
+                </th>
+                <td>global attributes</td>
+                <td>It used to wrap the header data of the web page like navbar.</td>
+            </tr>
+            <tr>
+                <td>40</td>
+                <th scope="row">
+                    &lt;hgroup&gt;
+                </th>
+                <td>global attributes</td>
+                <td>Group heading elements.</td>
+            </tr>
+            <tr>
+                <td>41</td>
+                <th scope="row">
+                    &lt;hr&gt;<br>
+                    Horizontal Rule Element
+                </th>
+                <td>global attributes</td>
+                <td>It draws the line visually.</td>
+            </tr>
+            <tr>
+                <td>42</td>
+                <th scope="row">
+                    &lt;html&gt;
+                </th>
+                <td>global attributes</td>
+                <td>The root element of the whole page, all the things written in this element.</td>
+            </tr>
+            <tr>
+                <td>43</td>
+                <th scope="row">
+                    &lt;i&gt;<br>
+                    Idiomatic Element
+                </th>
+                <td>global attributes</td>
+                <td>visually make text italic.</td>
+            </tr>
+            <tr>
+                <td rowspan="4">44</td>
+                <th rowspan="4" scope="row">
+                    <a href="others.html" >&lt;iframe&gt;</a>
+
+                </th>
+                <td></td>
+                <td>It allows us to dispay external links on our page on perticular section.</td>
+            </tr>
+            <tr>
+                <td>allow=""</td>
+                <td>
+                    <ul>
+                        <li>geolocation : Allows and give the permission of location.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>allowfullscreen="yes" or "no"</td>
+                <td>It allows fullscreen using requestFullscreen() method.</td>
+            </tr>
+            <tr>
+                <td>sandbox</td>
+                <td>
+                    <ul>
+                        <li>allow-downloads : Allows downloading files using anchor tag with download attribute.</li>
+                        <li>allow-forms : Allows to submit forms.</li>
+                        <li>allow-popups : Allows popups.</li>
+                        <li>allow-same-origin : Allows links from same origin.</li>
+                        <li>allow-scripts : Allows to run scripts.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="9">45</td>
+                <th rowspan="9" scope="row">
+                    <a href="image_tag.html" >&lt;img&gt;</a>
+
+                </th>
+                <td></td>
+                <td>It allows us to dispay external links on our page on perticular section.</td>
+            </tr>
+            <tr>
+                <td>href</td>
+                <td>URL destination for links and anchors</td>
+            </tr>
+            <tr>
+                <td>src</td>
+                <td>Source URL for embedded content</td>
+            </tr>
+            <tr>
+                <td>alt</td>
+                <td>Alternative text for images</td>
+            </tr>
+            <tr>
+                <td>loading</td>
+                <td>
+                    <ul>
+                        <li>lazy : It will load the images which are on the viewport and the images which are below the
+                            viewport like scrollbar, they will be loaded when user scrolls and reaches that part of
+                            image.</li>
+                        <li>eager : It will load image while loading the other content.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>srcset</td>
+                <td>Multiple image sources for responsive design</td>
+            </tr>
+            <tr>
+                <td>sizes</td>
+                <td>Image sizes for different viewports</td>
+            </tr>
+            <tr>
+                <td>decoding</td>
+                <td>
+                    <ul>
+                        <li>sync : It will load the image synchronously with other content.</li>
+                        <li>async : It will let the other content first.</li>
+                        <li>auto : Browser will decide who will load first.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>fetchpriority</td>
+                <td>Loading priority of the image when there are more images(high/low/auto)</td>
+            </tr>
+            <tr>
+                <td rowspan="2">46</td>
+                <th rowspan="2" scope="row">
+                    <a href="forms.html" >&lt;input&gt;</a>
+
+                </th>
+                <td></td>
+                <td>Used to take input from user.</td>
+            </tr>
+
+            <tr>
+                <td>type=""</td>
+                <td>Type of input (text, password, email, etc.)</td>
+            </tr>
+
+            <tr>
+                <td>value</td>
+                <td>Initial/default value of the input</td>
+            </tr>
+            <tr>
+                <td>placeholder</td>
+                <td>Hint text displayed in empty input</td>
+            </tr>
+            <tr>
+                <td>required</td>
+                <td>Makes input mandatory before submission</td>
+            </tr>
+            <tr>
+                <td>disabled</td>
+                <td>Disables the input field</td>
+            </tr>
+            <tr>
+                <td>readonly</td>
+                <td>Makes input read-only (can't edit)</td>
+            </tr>
+            <tr>
+                <td>maxlength</td>
+                <td>Maximum number of characters allowed</td>
+            </tr>
+            <tr>
+                <td>minlength</td>
+                <td>Minimum number of characters required</td>
+            </tr>
+            <tr>
+                <td>min</td>
+                <td>Minimum value (for number/date inputs)</td>
+            </tr>
+            <tr>
+                <td>max</td>
+                <td>Maximum value (for number/date inputs)</td>
+            </tr>
+            <tr>
+                <td>step</td>
+                <td>Increment step (for number/range inputs)</td>
+            </tr>
+            <tr>
+                <td>pattern</td>
+                <td>Regex pattern for input validation</td>
+            </tr>
+            <tr>
+                <td>autocomplete</td>
+                <td>Enables/disables browser autocomplete</td>
+            </tr>
+            <tr>
+                <td>autofocus</td>
+                <td>Automatically focuses input on page load</td>
+            </tr>
+            <tr>
+                <td>size</td>
+                <td>Visible width of input in characters</td>
+            </tr>
+            <tr>
+                <td>multiple</td>
+                <td>Allows multiple values (for file/email inputs)</td>
+            </tr>
+            <tr>
+                <td>accept</td>
+                <td>File types accepted (for file inputs)</td>
+            </tr>
+            <tr>
+                <td>checked</td>
+                <td>Pre-selects checkbox/radio button</td>
+            </tr>
+            <tr>
+                <td>spellcheck</td>
+                <td>Enables/disables spell checking</td>
+            </tr>
+            <tr>
+                <td>tabindex</td>
+                <td>Keyboard navigation order</td>
+            </tr>
+            <tr>
+                <td>47</td>
+                <th scope="row">
+                    &lt;kbd&gt;<br>
+                    Keyboard Input element
+
+                </th>
+                <td>global attributes</td>
+                <td>Used to write keyboard shortcuts. <br> <kbd>ctrl + shift + up arrow</kbd></td>
+            </tr>
+            <tr>
+                <td rowspan="2">48</td>
+                <th rowspan="2" scope="row">
+                    &lt;label&gt;
+
+                </th>
+                <td>global attributes</td>
+                <td>Used to give caption to the input element.</td>
+            </tr>
+            <tr>
+                <td>for="id_name"</td>
+                <td>Give the name of id which is given to the inout tag.</td>
+            </tr>
+            <tr>
+                <td>49</td>
+                <th scope="row">
+                    <a href="lists.html" >&lt;ul&gt; & &lt;ol&gt; & &lt;li&gt;</a>
+                </th>
+                <td></td>
+                <td>
+                    <ul>
+                        <li>Unordered List <br>
+                            type="" - circle, square, disc
+                        </li>
+                        <li>Ordered LIst <br>
+                            type="" - A, a, 1, I, i
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+
+            <td rowspan="7">50</td>
+            <th rowspan="7" scope="row">
+                &lt;link&gt; <br>
+                External Resource Link element
+            </th>
+            <td></td>
+            <td>
+                Used to link external links and also used to set favicon.
+            </td>
+            </tr>
+
+            <tr>
+                <td>type=""</td>
+                <td>Which type of resourse is attached. (MIME type)</td>
+            </tr>
+            <tr>
+                <td>href=""</td>
+                <td>Path of the external link.</td>
+            </tr>
+            <tr>
+                <td>rel=""</td>
+                <td>Relationship between current and linked document</td>
+            </tr>
+            <tr>
+                <td>as</td>
+                <td>Type of content being loaded (for preload)</td>
+            </tr>
+            <tr>
+                <td>crossorigin</td>
+                <td>CORS settings for the request</td>
+            </tr>
+            <tr>
+                <td>onload</td>
+                <td>JavaScript code when resource loads</td>
+            </tr>
+
+
+            <tr>
+                <td>51</td>
+                <th scope="row">
+                    &lt;main&gt;
+
+                </th>
+                <td>global attributes</td>
+                <td>Semantic tag, Used to write the main content of the section or web page.</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <th scope="row">
+                    &lt;nav&gt;
+
+                </th>
+                <td>global attributes</td>
+                <td>Sementic meaning, Used to wrap the content of the navbar.</td>
+            </tr>
+            <tr>
+                <td>53</td>
+                <th scope="row">
+                    &lt;mark&gt;
+
+                </th>
+                <td>global attributes</td>
+                <td>USed to hightight the text. <mark>Just like this.</mark>
+                </td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <th scope="row">
+                    &lt;marquee&gt;
+                </th>
+                <td></td>
+                <td>Used to write a text which can slide on the page.(DEPRECATED)</td>
+            </tr>
+            <tr>
+                <td>55</td>
+                <th scope="row">
+                    &lt;menu&gt;
+
+                </th>
+                <td>global attributes</td>
+                <td>Sementic meaning, Used to wrap the items which repreaents the menu just like navabr.</td>
+            </tr>
+
+
+
+            <tr>
+                <td rowspan="7">56</td>
+                <th rowspan="7" scope="row">
+                    <a href="forms.html#meter_tag" > &lt;meter&gt;</a>
+                </th>
+                <td>global attributes</td>
+                <td>Represent scalar value between known range.</td>
+            </tr>
+            <tr>
+                <td>value=""</td>
+                <td>Current numeric value.</td>
+            </tr>
+            <tr>
+                <td>min</td>
+                <td>Lower value of the range.</td>
+            </tr>
+            <tr>
+                <td>max</td>
+                <td>Higher value of the range.</td>
+            </tr>
+            <tr>
+                <td>low</td>
+                <td>Upper bound of the low end of the range, must be greater than min attribute and less than high
+                    attribute and max attribute.</td>
+            </tr>
+            <tr>
+                <td>high</td>
+                <td>Lower bound of the high end of the range, must be less than max attribute and greater than low and
+                    min attribute.</td>
+            </tr>
+            <tr>
+                <td>optimum</td>
+                <td>Must be between max and min attribute, browser ca change colorof it according to high and low
+                    attribute.</td>
+            </tr>
+
+            <tr>
+                <td>57</td>
+                <th scope="row">
+                    &lt;nobr&gt; <br>
+                    Non-Breaking Text element
+                </th>
+                <td>global attributes</td>
+                <td>DEPRECATED</td>
+            </tr>
+            <tr>
+                <td>58</td>
+                <th scope="row">
+                    &lt;noscript&gt;
+
+                </th>
+                <td>global attributes</td>
+                <td>If script type is not supported on web page than it will display the given html code.</td>
+            </tr>
+            <tr>
+                <td>59</td>
+                <th scope="row">
+                    &lt;object&gt;
+
+                </th>
+                <td>global attributes</td>
+                <td>Used to give caption to the input element.</td>
+            </tr>
+            <tr>
+                <td>60</td>
+                <th scope="row">
+                    &lt;label&gt;
+
+                </th>
+                <td>global attributes</td>
+                <td>Represent external resourse.</td>
+            </tr>
+
+
+            <tr>
+                <td rowspan="2">61</td>
+                <th scope="row" rowspan="2">
+
+                    <a href="forms.html#car" >&lt;select&gt; & >&lt;optgroup&gt; & &lt;option&gt;</a>
+
+                </th>
+                <td></td>
+                <td>Used to make a list which gives a dropdown box amd optgroup used to make the group of the options.
+                </td>
+            </tr>
+            <td>selected</td>
+            <td>Attribute of &lt;option&gt; tag, Dispalys by default selected option.</td>
+            </tr>
+            <tr>
+                <td>62</td>
+                <th scope="row">
+
+                    &lt;output&gt;
+
+                </th>
+                <td></td>
+                <td>Container which displays the output get by user action.
+                </td>
+            </tr>
+            <tr>
+                <td>63</td>
+                <th scope="row">
+
+                    &lt;p&gt;
+
+                </th>
+                <td>global attributes</td>
+                <td>Used to write a paragraph like text.
+                </td>
+            </tr>
+            <tr>
+                <td>64</td>
+                <th scope="row">
+                    <a href="image_tag.html#picture_tag" >&lt;picture&gt; </a>
+                </th>
+                <td>global attributes</td>
+                <td>Contains zero or more &lt;source&gt; element anmd one &lt;img&gt; tag. Used to make responsive
+                    images.
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">65</td>
+                <th scope="row" rowspan="2">
+                    <a href="basic_tag.html#pre_tag" >&lt;pre&gt; <br> </a>Preformatted Text element
+                </th>
+                <td>global attributes</td>
+                <td>Used to display preformatted text.
+                </td>
+            </tr>
+            <tr>
+                <td>wrap</td>
+                <td>How the overflow happen.
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="3">66</td>
+                <th scope="row" rowspan="3"><a href="forms.html#progress_tag" >&lt;progress&gt; <br> </a>Progress
+                    Indicator element</th>
+                <td>global attributes</td>
+                <td>Used to display the progress of any task.</td>
+            </tr>
+            <tr>
+                <td>max</td>
+                <td>Maximium progress of the task, must be greater than 0, by default 1.
+                </td>
+            </tr>
+            <tr>
+                <td>value </td>
+                <td>Value of the progress.
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">67</td>
+                <th scope="row" rowspan="2"><a href="basic_tags.html#q_tag" >&lt;q&gt; <br> </a>Inline Quotation
+                    Element</th>
+                <td>global attributes</td>
+                <td>Used to quote small/short text.</td>
+            </tr>
+            <tr>
+                <td>&lt;cite&gt;</td>
+                <td>Used to write citation, like author name or publishing date etc.
+                </td>
+            </tr>
+            <tr>
+                <td>68</td>
+                <th scope="row"><a href="extra_tags_2.html#ruby_tag" >&lt;s&gt; <br> </a>Strickthrough
+                    Element</th>
+                <td>global attributes</td>
+                <td>Used to write annotations of East-Asian typography.</td>
+            </tr>
+            <tr>
+                <td>69</td>
+                <th scope="row"><a href="extra_tags_2.html#s_tag" >&lt;ruby&gt;, &lt;rp&gt;, &lt;rt&gt;
+                        <br> </a>Ruby Element</th>
+                <td>global attributes</td>
+                <td>Used to mark teat as strickthrough.</td>
+            </tr>
+            <tr>
+                <td>70</td>
+                <th scope="row"><a href="basic_tags.html#samp_tag" >&lt;samp&gt; <br> </a>Sample Output
+                    Element</th>
+                <td>global attributes</td>
+                <td>Used to write a sample error code in the webpage.</td>
+            </tr>
+            <tr>
+                <td>71</td>
+                <th scope="row">&lt;script&gt;</th>
+                <td></td>
+                <td>Used to include internal script.</td>
+            </tr>
+            <tr>
+                <td>72</td>
+                <th scope="row"><a href="input.html#search_tag">&lt;search&gt;</a><br>Search Element</th>
+                <td></td>
+                <td>Used to make search functionality.</td>
+            </tr>
+            <tr>
+                <td>73</td>
+                <th scope="row">&lt;section&gt;</th>
+                <td></td>
+                <td>Sementic meaning, used to make a section and it includes mostly heading items.</td>
+            </tr>
+            <tr>
+                <td>74</td>
+                <th scope="row"><a href="basic_tags.html#small_tag">&lt;small&gt;</a></th>
+                <td></td>
+                <td>Used to write small text. (DEPRECATED)</td>
+            </tr>
+            <tr>
+                <td>75</td>
+                <th scope="row">&lt;span&gt;<br>Content Span Element</th>
+                <td>global attributes</td>
+                <td>Used to wrap inline elements.</td>
+            </tr>
+            <tr>
+                <td>76</td>
+                <th scope="row">&lt;strong&gt;<br>Strong Importance element</th>
+                <td>global attributes</td>
+                <td>Used to write strong importance text.</td>
+            </tr>
+            <tr>
+                <td>77</td>
+                <th scope="row">&lt;style&gt;<br>Style Element</th>
+                <td>global attributes</td>
+                <td>Contain styles of the elements always in head tag.</td>
+            </tr>
+            <tr>
+                <td>78</td>
+                <th scope="row"><a href="basic_tags.html#sub_tag">&lt;sub&gt;, &lt;sup&gt;</a></th>
+                <td>global attributes</td>
+                <td>USed to write superscript and subscript.</td>
+            </tr>
+            <tr>
+                <td rowspan="2">79</td>
+                <th scope="row" rowspan="2"><a href="pj_tbl.html">&lt;table&gt;</a></th>
+                <td>global attributes & Others are deprecated which was given specially for the table</td>
+                <td>Used to write and make tables.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <ul>Child Elements :
+                        <li>&lt;tr&gt; : Table row</li>
+                        <li>&lt;td&gt; : Table data</li>
+                        <li>&lt;th&gt; : Table header, by default centered and bold</li>
+                        <li>&lt;thead&gt; : Table head, consists the header data</li>
+                        <li>&lt;tfoot&gt; : Table footer, consists the table footer data</li>
+                        <li>&lt;tbody&gt; : Table body, consists the whole table's body</li>
+                        <li>&lt;caption&gt; : Table caption, Used to write the caption of the table</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>80</td>
+                <th scope="row">&lt;template&gt;</th>
+                <td></td>
+                <td>Used to make small html fragments later included by JS. (REQUIRED JS)</td>
+            </tr>
+            <tr>
+                <td rowspan="15">81</td>
+                <th rowspan="15" scope="row"><a href="forms.html#textarea_tag">&lt;textarea&gt;</a></th>
+                <td></td>
+                <td>Used display textarea with rows and cols.</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>Name of the textarea for form submission</td>
+            </tr>
+            <tr>
+                <td>rows</td>
+                <td>Visible number of text lines</td>
+            </tr>
+            <tr>
+                <td>cols</td>
+                <td>Visible width in average character widths</td>
+            </tr>
+            <tr>
+                <td>placeholder</td>
+                <td>Hint text displayed when empty</td>
+            </tr>
+            <tr>
+                <td>maxlength</td>
+                <td>Maximum number of characters allowed</td>
+            </tr>
+            <tr>
+                <td>minlength</td>
+                <td>Minimum number of characters required</td>
+            </tr>
+            <tr>
+                <td>required</td>
+                <td>Makes textarea mandatory before submission</td>
+            </tr>
+            <tr>
+                <td>disabled</td>
+                <td>Disables the textarea field</td>
+            </tr>
+            <tr>
+                <td>readonly</td>
+                <td>Makes textarea read-only (can't edit)</td>
+            </tr>
+            <tr>
+                <td>autocomplete</td>
+                <td>Enables/disables browser autocomplete</td>
+            </tr>
+            <tr>
+                <td>autofocus</td>
+                <td>Automatically focuses textarea on page load</td>
+            </tr>
+            <tr>
+                <td>form</td>
+                <td>ID of form this textarea belongs to</td>
+            </tr>
+            <tr>
+                <td>spellcheck</td>
+                <td>Enables/disables spell checking</td>
+            </tr>
+            <tr>
+                <td>wrap</td>
+                <td>Specifies how text should be wrapped (hard/soft)</td>
+            </tr>
+            <tr>
+                <td rowspan="2">82</td>
+                <th rowspan="2" scope="row"><a href="input.html#date_time">&lt;time&gt;</a></th>
+                <td></td>
+                <td>Used to represent time and date.</td>
+            </tr>
+            <tr>
+                <td>datetime</td>
+                <td>Used to define the foramats.
+                    <ul>
+                        <h4>Predefined formats :</h4>
+                        <li>YYYY-MM - 2011-11, 2013-05</li>
+                        <li>YYYY-MM-DD - 1887-12-01</li>
+                        <li>MM-DD - 11-12</li>
+                        <li>
+
+                            HH:MM - 23:59 <br>
+                            HH:MM:SS - 12:15:47 <br>
+                            HH:MM:SS.mmm - 12:15:52.998 <br>
+
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>83</td>
+                <th scope="row">&lt;title&gt;</th>
+                <td>global attributes</td>
+                <td>Used to define the title of the page, visible on tab name.</td>
+            </tr>
+            <tr>
+                <td>84</td>
+                <th scope="row">&lt;track&gt;</th>
+                <td></td>
+                <td>Used to track the subtitles, supports .vtt files.</td>
+            </tr>
+            <tr>
+                <td>85</td>
+                <th scope="row">&lt;u&gt; <br>Unarticulated Annotation (Underline) element</th>
+                <td></td>
+                <td>Used to write underlined text. <u>LIKE THIS</u></td>
+            </tr>
+            <tr>
+                <td>86</td>
+                <th scope="row">&lt;var&gt; <br>Variable element element</th>
+                <td></td>
+                <td>Used to write variables, by default monospace font (<var>x = 4;</var>)</td>
+            </tr>
+            <tr>
+                <td rowspan="11">87</td>
+                <th rowspan="11" scope="row"><a href="media.html">&lt;video&gt;</a></th>
+                <td></td>
+                <td>Used to display videos.</td>
+            </tr>
+
+            <tr>
+                <td>src</td>
+                <td>URL of the video file</td>
+            </tr>
+            <tr>
+                <td>poster</td>
+                <td>Image shown before video plays</td>
+            </tr>
+            <tr>
+                <td>width</td>
+                <td>Width of video player in pixels</td>
+            </tr>
+            <tr>
+                <td>height</td>
+                <td>Height of video player in pixels</td>
+            </tr>
+            <tr>
+                <td>controls</td>
+                <td>Shows video player controls</td>
+            </tr>
+            <tr>
+                <td>autoplay</td>
+                <td>Automatically starts playing video</td>
+            </tr>
+            <tr>
+                <td>loop</td>
+                <td>Loops video playback</td>
+            </tr>
+            <tr>
+                <td>muted</td>
+                <td>Mutes audio by default</td>
+            </tr>
+            <tr>
+                <td>preload</td>
+                <td>How video should be loaded (none/metadata/auto)</td>
+            </tr>
+            <tr>
+                <td>crossorigin</td>
+                <td>CORS settings for video request</td>
+            </tr>
+            <tr>
+                <td>88</td>
+                <th scope="row"><a href="basic_tags.html#wbr_tag" >&lt;wbr&gt;</a> Word Break Element
+                </th>
+                <td>global attributes</td>
+                <td>Used to break word manually.</td>
+            </tr>
+        </tbody>
+    </table>
+</center>
+
+    <!-- <ul type="none">
         <li>
             <h2>Demo of covered topics</h2>
         </li>
-    </ul>
+    </ul> -->
 
-    <ol type="1">
+    <!-- <ol type="1">
 
         <dialog open>
             <p>KYA HAAL HE</p>
             <form method="dialog">
-                <button accesskey="s" autofocus><b><u>S</u></b>ave</button>
+                <button accesskey="s"><b><u>S</u></b>ave</button>
             </form>
         </dialog>
-        <!-- <base href="forms.html" target="_blank"> -->
-        <base href="basic_tags.html" target="_blank">
+        <base href="forms.html" > 
+        <base href="basic_tags.html" >
 
-        <li><a href="#sub_tag" tabindex="3" target="_blank"
+        <li><a href="#sub_tag" tabindex="3" 
                 title="Click here to open the file which consists the html basic tags demo">Basic tags demo</a></li>
-        <li><a href="forms.html" tabindex="2" target="_blank"
+        <li><a href="forms.html" tabindex="2" 
                 title="Click here to open the file which consists the htmlForm demo">Forms demo</a></li>
-        <li><a href="tables.html" tabindex="4" target="_blank"
+        <li><a href="tables.html" tabindex="4" 
                 title="Click here to open the file which consists the table tag demo">Table demo</a></li>
-        <li><a href="lists.html" tabindex="53" target="_blank"
+        <li><a href="lists.html" tabindex="53" 
                 title="Click here to open the file which consists the ol and ul tag demo">lists demo</a></li>
-        <li><a href="media.html" target="_blank"
+        <li><a href="media.html" 
                 title="Click here to open the file which consists the media tags demo">Media tags demo</a></li>
-        <li><a href="others.html" target="_blank"
+        <li><a href="others.html" 
                 title="Click here to open the file which consists the other tags demo">Other tags demo</a></li>
-        <li><a href="image_tag.html" target="_blank"
+        <li><a href="image_tag.html" 
                 title="Click here to open the file which consists the image tags demo">Image tag demo</a></li>
-        <li><a href="svg_demo.html" target="_blank"
+        <li><a href="svg_demo.html" 
                 title="Click here to open the file which consists the svg tag demo">SVG tag demo</a></li>
-        <li><a href="semantics_demo.html" target="_blank"
+        <li><a href="semantics_demo.html" 
                 title="Click here to open the file which consists the Semantics tags demo">Semantic tags demo</a></li>
-        <li><a href="global_attributes.html" target="_blank"
+        <li><a href="global_attributes.html" 
                 title="Click here to open the file which consists the Global Attributes Demo">Global Attributes Demo</a>
         </li>
-        <li><a href="pj_tbl.html" target="_blank" title="Click here to open the task of table gtiven by trainer">Table
+        <li><a href="pj_tbl.html"  title="Click here to open the task of table gtiven by trainer">Table
                 task given by trainer</a></li>
-        <li><a href="extra_tags_1.html" target="_blank"
+        <li><a href="extra_tags_1.html" 
                 title="Click here to open the task of tags and attributes given by trainer">Task given by trainer -
                 1</a></li>
-        <li><a href="extra_tags_2.html" target="_blank"
+        <li><a href="extra_tags_2.html" 
                 title="Click here to open the task of tags and attributes given by trainer">Task given by trainer -
                 2</a></li>
-        <li><a href="task.html" target="_blank" title="Click here to open the task of table given by trainer">Task of
+        <li><a href="task.html"  title="Click here to open the task of table given by trainer">Task of
                 table given by trainer - 2</a></li>
-        <li><a href="simpleform_task.html" target="_blank" title="Click here to open the task of form given by trainer">Task of
+        <li><a href="simpleform_task.html" 
+                title="Click here to open the task of form given by trainer">Task of
                 form given by trainer</a></li>
-        <li><a href="student_form.html" target="_blank" title="Click here to open the task of student form given by trainer">Task of
+        <li><a href="student_form.html" 
+                title="Click here to open the task of student form given by trainer">Task of
                 student form given by trainer </a></li>
 
         <button popovertarget="my-popover" style="margin-top: 10px;cursor: progress;"
@@ -86,39 +1401,28 @@
         <div popover id="my-popover" style="background-color: red; color: white;">
             <h1>Miracle</h1>
         </div>
-    </ol>
+    </ol> -->
 
     <hr>
 
-    <footer>
-        <h2><mark>Website Footer</mark></h2>
-        <div>
-            <div>
-                <h3 contenteditable>Contact Us</h3>
-                <p>
-                    <strong>Email:</strong>
-                    <a href="mailto:contact@example.com?subject=Inquiry&body=Dear Team,">contact@example.com</a>
-                </p>
-                <p>
-                    <strong>Phone:</strong>
-                    <a href="tel:+1234567890">+1 (234) 567-890</a> &#x7C;
-                    <a href="tel:+1234567890">+1 (234) 567-890</a>
-                </p>
-                <p>
-                    <strong>Support:</strong>
-                    <a href="mailto:support@example.com">support@example.com</a>
-                </p>
-            </div>
-        </div>
-        <div>
+    <footer style="display: flex; justify-content: space-around; align-items: center;">
+
+
+        <address id="address_tag">
+            <h3>Contact Us</h3>
             <p>
-            <h2 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-                &copy; 2026 All rights reserved.
-            </h2>
+                <strong>Email:</strong>
+                <a href="mailto:contact@example.com">contact@example.com</a>
             </p>
             <p>
-                <sub>Last updated: Jan 21, 2026</sub>
+                <strong>Phone:</strong>
+                <a href="tel:+1234567890">+1 (234) 567-890</a>
             </p>
+        </address>
+
+        <div>
+            <p>&copy; 2026 All rights reserved.</p>
+            <p><sub>Last updated: Jan 27, 2026</sub></p>
         </div>
     </footer>
 </body>

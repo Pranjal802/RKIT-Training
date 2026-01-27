@@ -30,6 +30,8 @@
 <body>
     <h1>HTML Image Tag Demo</h1>
 
+    <a href="pj_tbl.html">Click here to see the demo of "_parent" target.</a>
+
     <ol type="A">
         <!-- <li>
             <input type="text" name="txt1" id="txt1"><br>
@@ -38,10 +40,10 @@
         </li> -->
         <li>
             <h2>Simple image</h2>
-            <img src="large.jpg" srcset="" sizes="(max-width: 400px) 300px, (max-width: 800px) 600px, 900px"
+            <img src="./img_media/large.jpg" srcset="" sizes="(max-width: 400px) 300px, (max-width: 800px) 600px, 900px"
                 alt="Large img" loading="eager" decoding="sync" draggable="false"><br>
         </li>
-        <li>
+        <li id="picture_tag">
             <h2>Using &lt;picture&gt; tag</h2>
             <picture>
                 <source srcset="./small.jpg 300w" media="(max-width: 400px)">
@@ -50,10 +52,12 @@
             </picture>
         </li>
 
-        <li>
-            <h2>Simple image from external source</h2>
-            <img src="demo.pdf" draggable="true" alt="Large img" loading="eager" decoding="sync"
+        <li id="fig_figcap">
+            <figure>
+                <figcaption>Simple image from external source</figcaption>
+                <img src="./img_media/medium.jpg" draggable="true" alt="Large img" loading="eager" decoding="sync"
                 referrerpolicy="no-referrer" height="200px" width="300px"> <br>
+            </figure>
         </li>
         <li>
             <h2>clickable image</h2>
